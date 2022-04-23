@@ -8,6 +8,12 @@ This is a demonstration of a problem that occurs under the following conditions:
 * Multi-site hosting environment
 * A recent update (cPanel?) was done.
 
+## Symptoms
+
+The PHP function `file_get_contents()` does not retreive file contents, and hangs for a noticiable amount of time. When it finally returns the only log message is - 
+
+`file_get_contents([url]) failed to open stream: Connection timed out`
+
 ## History
 
 I think this problem first started in 2019 or 2020. The hosting service tech support folks would "do something" and the problem would be fixed. For a while.
@@ -16,11 +22,11 @@ It took a couple more occurrences and I noticed that it seemed to be coinciding 
 
 ## Set Up
 
-You will need two websites for this demonstration, and they must be hosted on the same server. In addition it will also be necessary for you to have shell access and permissions to create folders on, and copy files to each sites' document root.
+You will need two websites for this demonstration, and they must be hosted on the **same server**. In addition it will also be necessary for you to have shell access and permissions to create folders on, and copy files to each sites' document root.
 
 Take note of the servers' domains, they will be required later for editing the script. And they will be referred to as **"Site A"** and **"Site B"**.
 
-Typically the *document root* is located at `/home/$USER/public_html`, on **each server** navigate to it and create a folder named `testtemp`. Copy `file_get_contents-error_demo.php` and `tzone.json` into the folder on *both servers*.
+Typically the *document root* is located at `/home/$USER/public_html`, on **each server** navigate to it and create a folder named `testtemp`. Copy `file_get_contents-error_demo.php`, `curl-get_error_demo.php`, and `tzone.json` into the folders on *both servers*.
 
 **"Site A" Set Up**
 First edit the `file_get_contents-error_demo.php` for "Site A". At the top of the file:
