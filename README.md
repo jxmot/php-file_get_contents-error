@@ -101,5 +101,9 @@ Array
 
 Running the "Site B" script should produce very similar output.
 
+# Exact Cause
+
+Unknown at this time.
+
 ---
 <img src="http://webexperiment.info/extcounter/mdcount.php?id=php-file_get_contents-error">
