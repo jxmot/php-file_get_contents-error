@@ -1,4 +1,6 @@
 <?php
+// Please see the README in this repository first, thanks!
+//
 // these WILL fail if this script is ran from SITE_A!
 //$url = 'http://SITE_B/testtemp/tzone.json';
 //$url = 'https://SITE_B/testtemp/tzone.json';
@@ -7,7 +9,7 @@
 //$url = 'https://baconipsum.com/api/?type=meat-and-filler&paras=1&format=text';
 
 // local files continue to work correctly
-$url = './tzone.json';
+//$url = './tzone.json';
 
 if( ini_get('allow_url_fopen') ) {
     echo "\nallow_url_fopen is enabled.\n\n";
