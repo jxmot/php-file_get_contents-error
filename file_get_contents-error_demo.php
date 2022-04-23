@@ -6,7 +6,7 @@
 //$url = 'https://SITE_B/testtemp/tzone.json';
 
 // this WILL WORK!
-//$url = 'https://baconipsum.com/api/?type=meat-and-filler&paras=1&format=text';
+//$url = 'https://baconipsum.com/api/?type=meat-and-filler&paras=1&format=json';
 
 // local files continue to work correctly
 //$url = './tzone.json';
@@ -33,6 +33,7 @@ $data = file_get_contents($url, false, $context);
 
 echo "data = [{$data}]\n\n";
 
+echo 'error_get_last: ';
 print_r(error_get_last());
 echo "\n\n";
 ?>
