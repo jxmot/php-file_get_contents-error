@@ -1,4 +1,4 @@
-# get_contents() Connection Timeout
+# file_get_contents() Connection Timeout
 
 This is a demonstration of a problem that occurs under the following conditions:
 
@@ -7,6 +7,12 @@ This is a demonstration of a problem that occurs under the following conditions:
 * Server built:   Apr 19 2022 23:33:10
 * Multi-site hosting environment
 * A recent update (cPanel?) was done.
+
+## History
+
+I think this problem first started in 2019 or 2020. The hosting service tech support folks would "do something" and the problem would be fixed. For a while.
+
+It took a couple more occurrences and I noticed that it seemed to be coinciding with server updates. And during one of my many web searches there seemed to be a intangible connection to a *firewall*... I'm still investigating.
 
 ## Set Up
 
@@ -69,7 +75,7 @@ $ cd /home/$USER/public_html/testtemp
 $ php ./file_get_contents-error_demo.php
 ```
 
-*Where* `$USER` *is typically the user name you logged in with*
+*Where* `$USER` *is typically the user name you logged in with.*
 
 If the problem has been resolved, or if your servers don't have the issue the you will see the following output from the script:
 
@@ -100,6 +106,12 @@ Array
 ```
 
 Running the "Site B" script should produce very similar output.
+
+# PHP curl
+
+Unfortunately PHP curl has the same problem. Edit and run `curl-get_error_demo.php` just like `file_get_contents-error_demo.php` above. 
+
+The only differnce has been when `"./tzone.json"` is the URL the curl version fails and `file_get_contents-error_demo.php` does not.
 
 # Exact Cause
 
