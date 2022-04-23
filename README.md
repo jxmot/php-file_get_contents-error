@@ -119,6 +119,10 @@ Unfortunately PHP curl has the same problem. Edit and run `curl-get_error_demo.p
 
 The only differnce has been when `"./tzone.json"` is the URL the curl version fails and `file_get_contents-error_demo.php` does not.
 
+# Just curl
+
+A bash shell script `curl-get_error_demo.sh`, is also provided. It will demonstrate the same issue as the PHP scripts.
+
 # Exact Cause
 
 Unknown at this time.
