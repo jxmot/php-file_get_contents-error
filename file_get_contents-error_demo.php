@@ -23,9 +23,10 @@ echo "url = {$url}\n\n";
 $opts = array(
     'http'=>array(
         'method'=>'GET',
-        'header'=>"user-agent: custom\r\n"
-                 ."Content-Type: application/json; charset=utf-8\r\n"
-                 ."Content-Encoding: text\r\n"
+        'header'=>"user-agent: file_get_contents-error_demo.php\r\n"
+                 ."Accept-language: en-US\r\n"
+                 ."Accept: application/json\r\n" 
+                 ."Accept-Charset: utf-8\r\n"
     )
 );
 $context = stream_context_create($opts);

@@ -28,10 +28,10 @@ curl_setopt($curl, CURLOPT_URL, $url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
 $headers = array(
-    'user-agent: custom',
-    'Content-Type: application/json; charset=utf-8',
-    'Content-Encoding: text'
-    
+    'user-agent: curl-get_error_demo.php',
+    'Accept-language: en-US',
+    'Accept: application/json',
+    'Accept-Charset: utf-8',
 );
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
