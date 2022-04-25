@@ -105,8 +105,8 @@ data = []
 Array
 (
     [type] => 2
-    [message] => file_get_contents(http://myinfofind.com/temptest/tzone.json): failed to open stream: Connection timed out
-    [file] => /home/webxinfo/public_html/portfolio/mdhc/file_get_contents-error_demo-20211004.php
+    [message] => file_get_contents(http://exampleB.com/testtemp/tzone.json): failed to open stream: Connection timed out
+    [file] => //home/$USER/public_html/testtemp/file_get_contents-error_demo.php
     [line] => 59
 )
 ```
