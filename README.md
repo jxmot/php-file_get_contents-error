@@ -125,7 +125,7 @@ A bash shell script `curl-get_error_demo.sh`, is also provided. It will demonstr
 
 # Exact Cause
 
-Unknown at this time.
+Unknown at this time. A question has been posted on [ServerFault](<https://serverfault.com/questions/1099604/apache-why-do-get-requests-fail-between-domains-that-are-sharing-an-ip>). 
 
 ---
 <img src="http://webexperiment.info/extcounter/mdcount.php?id=php-file_get_contents-error">
