@@ -129,5 +129,7 @@ Unknown at this time. A question has been posted on [ServerFault](<https://serve
 
 **NOTE:** After 4 months the question has not been answered on ServFault, I reposted it on [StackOverflow](https://stackoverflow.com/questions/73535249/apache-and-php-why-do-get-requests-fail-between-domains-that-are-sharing-an-ip)
 
+**UPDATE: 2022-08-31** I have received some answers on the StackOverflow post. However the server is currently working as expected. I captured the PHP cURL code that "Misunderstood" posted but I will have to wait for the failure to occur again before I can test it on the server.
+
 ---
 <img src="http://webexperiment.info/extcounter/mdcount.php?id=php-file_get_contents-error">
